@@ -80,10 +80,10 @@ endPort = int(input("Enter your ending port: "))
 if endPort < startingPort or endPort > 65535:
     while endPort < startingPort or endPort > 65535:
         endPort = int(input("Enter a valid ending port: "))
-#Time starts to calculate total time later on
+
 start = time.time()
 
-#Scans the specified port range the user entered
+
 for PortScan in range(startingPort, endPort):
     #Puts this for loop in the queue
     q.put(PortScan)
@@ -92,7 +92,7 @@ for PortScan in range(startingPort, endPort):
 q.join()
 timeEnd = time.time()
 
-#Calculates time elapsed
+
 totalTime = timeEnd - start
 print("\nScan finished in", totalTime, "seconds")
 print("\nThank you for using DNS Scanner made by Aussie7004 aka CountTo8\n")
