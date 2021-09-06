@@ -13,9 +13,7 @@
 
 #Pyfiglet is a library that allows for ascii style banners. This is responsible for my "DNS Scanner" banner
 import pyfiglet
-#Sys is just responsible for program functions (Used mainly in this code for sys.exit() which exits the code when called)
 import sys
-#Socket allows you to connect to the specific nodes, etc, in order to resolve the hostnames from the DNS specified and scan for open ports
 import socket
 
 
@@ -26,12 +24,9 @@ class Main():
     IPsave = 0
     IPsaveBool = False
 
-#Initiation function which allows global variables to be individual when called in functions
 
     def __init__(self):
         pass
-
-#This prints the banner 'DNS Scanner' in ascii style as well as 'Made by Aussie7004 aka CountTo8 (subtle plug)
 
     def Title(self):
         banner = pyfiglet.figlet_format("      DNS Scanner")
@@ -39,7 +34,6 @@ class Main():
 
         print ("                   Made by Aussie7004 aka CountTo8\n")
 
-#This function just prints the available options (more coming soon)
 
     def options(self):
         print("\nPick an option from below: ")
@@ -56,10 +50,9 @@ class Main():
                 print("\nEnter a valid choice:")
                 self.choices = int(input("\n1. DNS Resolver\n2. Port Scanner\n99. Quit\n\n"))
 
-#If user inputs 1, the DNS Resolver will get imported
+
         if self.choices == 1:
             import DNSResolver
-#If user inputs 2, the Port Scanner will get imported
         elif self.choices == 2:
             import PortScanner
 
