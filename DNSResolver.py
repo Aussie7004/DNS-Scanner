@@ -11,20 +11,20 @@
 import sys
 import socket
 
-#Clarifies that domain is try so that if the hostname is resolved, it changes to True
+
 domain = False
         
 try:
     DNS = input("Enter the DNS you would like to resolve or press Ctrl C to exit: ")
     if domain == False:
         try:       
-            #If domain is false, it will try and resolve the hostname and extract the IP
+            
             host = socket.gethostbyname(DNS)
 
             # This will print the IP address instead of the whole hostname
             ip = repr(host)
 
-            #Will print the hostname in the format of the DNS and IP
+            
             print("\nThe hostname for {} is {}".format(DNS, host))
 
             domain = True
