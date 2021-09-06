@@ -70,7 +70,7 @@ for x in range(1000):
     #Begins the threading
     t.start()
     
-    #This is pretty self explainitory - User enters the port range that they want to scan
+    
 startingPort = int(input("Enter your starting port: "))
 if startingPort < 1 or startingPort > 65534:
     while startingPort < 1 or startingPort > 65534:
