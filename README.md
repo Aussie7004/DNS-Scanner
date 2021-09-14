@@ -1,4 +1,4 @@
-Hey, my name is Aussie or CountTo8 and I am an 18 year old first year Cyber Security student.
+Hey, my name is Aussie or CountTo8 and I am a young, first year Cyber Security student.
 
 DNS Scanner is my first ever piece of code that I have uploaded to GitHub as a proper project, and my first ever upload. If you guys could give me feedback, I would take it into condsideration to improve any future projects I make.
 
